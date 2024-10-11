@@ -20,27 +20,28 @@
             <p class="text-white">Compilare i campi seguenti per calcolare il prezzo del biglietto del treno</p>
         </div>
     </header>
-
-    <div class="container" style="width: 50%">
-        <h3 class="my-3">Calcolatore del biglietto</h3>
-        <form class="py-3" id="calculated-price">
-            <div class="mb-3">
-                <label for="distance" class="form-label">Km da percorrere</label>
-                <input type="number" class="form-control" id="distance" value="distance"
-                    placeholder="Inserisci i km da percorrere" min="1" required>
-            </div>
-            <div class="mb-3">
-                <label for="age" class="form-label">Inerisci l'età</label>
-                <input type="number" class="form-control" id="age" value="age" placeholder="Inserisci l'età" min="1"
-                    max="100" required>
-            </div>
-            <button type="submit" class="btn btn-primary" id="submit">Invia</button>
-            <div id="result-container" class="d-none my-4">
-                <h3 class="text-success">Calcolato il prezzo del bigletto</h3>
-                <p id="result"></p>
-            </div>
-        </form>
-    </div>
+    <main>
+        <div class="container" style="width: 50%">
+            <h3 class="my-3">Calcolatore del biglietto</h3>
+            <form class="py-3" id="calculated-price">
+                <div class="mb-3">
+                    <label for="distance" class="form-label">Km da percorrere</label>
+                    <input type="number" class="form-control" id="distance"
+                        placeholder="Inserisci i km da percorrere" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Inerisci l'età</label>
+                    <input type="number" class="form-control" id="age" placeholder="Inserisci l'età" min="1"
+                        max="100" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Invia</button>
+                <div id="result-container" class="d-none my-4">
+                    <h3 class="text-success">Calcolato il prezzo del bigletto</h3>
+                    <p id="result"></p>
+                </div>
+            </form>
+        </div>
+    </main>
 
     <!-- main js -->
     <script src="js/main.js"></script>
